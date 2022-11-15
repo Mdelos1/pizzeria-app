@@ -88,6 +88,7 @@ const pagar = ()=>{
     <div className='backgraund-detalles'></div>
     <div className='backgraund1'></div>
     <div className='backgraund2'></div>
+    <div className='backgraund3'></div>
     <img src={element.img} /> 
  
     <img src={element.img2} /> 

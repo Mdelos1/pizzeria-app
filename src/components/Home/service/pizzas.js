@@ -2,7 +2,7 @@ import axios from "axios";
 
 
 
-const URL_API = 'https://pizzeria-back.onrender.com';
+const URL_API = 'https://my-json-server.typicode.com/jorgeARA/data-pizzeria';
 
 
 export const getPizzas = async () => {

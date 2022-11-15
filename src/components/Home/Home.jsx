@@ -9,14 +9,6 @@ const Home = () => {
   const[pizzas, setPizzas] = useState([]);
   const{usuarios, setusuarios} = useContext(AppContext)
   console.log(usuarios.length === 0)
-  let  cupones = [
-    {name:'Cupones para Frontends',
-descuento:'45% OFF'
-  },
-  {name:'Cupon Pizza CSS',
-  descuento:'25% OFF'
-    }
-  ]
   
 
   useEffect(() => {
@@ -40,21 +32,6 @@ navigate(`/pizzas?name=${target.id}`)
    <p className='body__subtitle'> <b>Ver todas </b> </p></article>
    <div className='prueba'>
    <article className='body__contcupon'>
-  
-   {
-    cupones.map((element, index)=>(
-      <>
-      <div className='relativo'> 
-      <div className='bacgrounfcupon'></div>
-      <div className='body__cupon' key={index}>
-      <p>{element.name}</p>
-      <p className='body__cupon__descuento'>{element.descuento}</p>
-    </div>
-    </div>
-</>
-    ))
-
-   }
    </article>
    </div>
 
@@ -74,6 +51,7 @@ navigate(`/pizzas?name=${target.id}`)
     <div className='backgraund' onClick={redireccion} id={element.name}></div>
     <div className='backgraund1'></div>
     <div className='backgraund2'></div>
+    <div className='backgraund3'></div>
     <img src={element.img} /> 
  
     <img src={element.img2} /> 

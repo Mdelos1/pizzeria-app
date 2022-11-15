@@ -11,7 +11,7 @@ import Swal from "sweetalert2";
 import { AppContext } from '../routes/Router';
 
 
-const URL_API = 'https://pizzeria-back.onrender.com/usuarios';
+const URL_API = 'https://my-json-server.typicode.com/jorgeARA/data-pizzeria/usuarios';
 
 const Login = () => {
   const navigate = useNavigate();
