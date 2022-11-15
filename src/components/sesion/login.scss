@@ -1,0 +1,66 @@
+.container-fluid {
+    margin: 0;
+    padding: 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../../assets/pizaa.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+.input--error {
+    border-bottom: 1px solid red!important ;
+}
+
+form {
+    color: white;
+    padding: 20px;
+    
+    & h1 {
+        font-weight: 700;
+    }
+    & img {
+        width: 30%;
+        filter: invert(98%) sepia(44%) saturate(2%) hue-rotate(49deg) brightness(107%) contrast(101%);
+    }
+
+    & input {
+        background-color: rgba(0, 0, 0, 0.048);
+        width: 100%;
+        border: none;
+        color: white;
+        border-bottom: 1px solid white;
+    }
+    & label {
+        & .input-group-text {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+        }
+        & .form-control {
+            background-color: transparent;
+            border: none;
+            border-bottom: 1px solid white;
+            color: white;
+
+            &::placeholder {
+                color: white;
+            }
+            &:focus {
+                background-color: transparent;
+                border: none;
+                color: white;
+            }
+        }
+    }
+}
+
+.cuenta {
+    font-size: 14px;
+}
+.register {
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+
